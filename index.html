@@ -42,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><strong>Mapping the Territories On Which Our Institutions Are Situated (#DHViz)</strong></a>
+          <a class="navbar-brand" href="/racedh.github.io/index.html"><strong>Mapping the Territories On Which Our Institutions Are Situated (#DHViz)</strong></a>
         </div>
 		<!-- menu items -->
         <div class="collapse navbar-collapse">
@@ -96,8 +96,8 @@ var markers = omnivore.csv('/data/Native-Peoples-and-Places.csv')
 	marker.toGeoJSON().properties.Links-Citation + '<br/><b>Participant: </b> ' + 
 	marker.toGeoJSON().properties.Participant, {autoPanPadding: [5,55]});
 		});
-	});
-            .addTo(map);
+	})
+        .addTo(map);
 </script>
 
           
