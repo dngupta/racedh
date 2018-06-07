@@ -71,8 +71,8 @@
 	<!-- loads jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/racedh.github.io/js/bootstrap.min.js"></script>
-    <script src="/racedh.github.io/leaflet-omnivore-master/leaflet-omnivore.js"></script>
+    <script src="racedh.github.io/js/bootstrap.min.js"></script>
+    <script src="racedh.github.io/leaflet-omnivore-master/leaflet-omnivore.js"></script>
  
       
 	<!-- Pulls data from csv and intitiates map -->
@@ -96,7 +96,8 @@ var markers = omnivore.csv('racedh.github.io/Native-Peoples-and-Places.csv')
 	marker.toGeoJSON().properties.Links-Citation + '<br/><b>Participant: </b> ' + 
 	marker.toGeoJSON().properties.Participant, {autoPanPadding: [5,55]});
 		});
-	}).addTo(map);
+	})
+		.addTo(map);
 </script>
 
           
