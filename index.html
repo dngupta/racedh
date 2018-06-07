@@ -91,9 +91,9 @@ var markers = omnivore.csv('/racedh.github.io/Native-Peoples-and-Places.csv')
 	this.eachLayer(function(marker) {
 	
 	marker.bindPopup(marker.toGeoJSON().properties.Acknowledgements + '<br><b>Home Location: </b>' + marker.toGeoJSON().properties.Institution + '<br><b>Native Peoples: </b>' + 
-	marker.toGeoJSON().properties.Native-peoples +  '<br/><b>Institutional Acknowledgements: </b> ' + 
-	marker.toGeoJSON().properties.Instituional-Acknowledgements + '<br/><b>Links: </b> ' + 
-	marker.toGeoJSON().properties.Links-Citation + '<br/><b>Participant: </b> ' + 
+	marker.toGeoJSON().properties.NativePeoples +  '<br/><b>Institutional Acknowledgements: </b> ' + 
+	marker.toGeoJSON().properties.InstituionalAcknowledgements + '<br/><b>Links: </b> ' + 
+	marker.toGeoJSON().properties.LinksCitation + '<br/><b>Participant: </b> ' + 
 	marker.toGeoJSON().properties.Participant, {autoPanPadding: [5,55]});
 		});
 	})
